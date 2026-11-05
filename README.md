@@ -39,8 +39,8 @@ per-site design:
 
 | File | What |
 |---|---|
-| `index.html` | Arabic-first landing (RTL, Saudi-friendly Arabic): hero, client proof strip (Riyadh Season + Saudi Tourism Authority first), 5 event services (coverage & content production, influencer invitations & event PR, UGC campaigns, entertainment social campaigns, brand activations), why influUGC (with the in-body editorial link to influugc.com), 4-step process (before / during / after the event + report), 6-question answer-first FAQ, contact/CTA band, network footer. |
-| `en.html` | Full English mirror (LTR), same structure and FAQ. |
+| `index.html` | Arabic-first landing (RTL, Saudi-friendly Arabic): hero, client proof strip (Riyadh Season + Saudi Tourism Authority first), **guides section (3 content-first guides — see retrofit note below)**, 5 event services (coverage & content production, influencer invitations & event PR, UGC campaigns, entertainment social campaigns, brand activations), why influUGC (with the in-body editorial link to influugc.com), 4-step process (before / during / after the event + report), 6-question answer-first FAQ, contact/CTA band, network footer. |
+| `en.html` | Full English mirror (LTR), same structure, guides and FAQ. |
 | `404.html` | Branded not-found page (Arabic). |
 
 Plus: `styles.css`, `favicon.svg` (black + lime RE mark), `sitemap.xml`
@@ -64,6 +64,30 @@ Plus: `styles.css`, `favicon.svg` (black + lime RE mark), `sitemap.xml`
 - Booking → `https://www.influugc.com/book?utm_source=riyadheventshub&utm_medium=satellite&utm_campaign=network`
 - WhatsApp (client line) → `https://wa.me/201029979797?utm_source=riyadheventshub&utm_medium=satellite&utm_campaign=network`
 - Footer legal line: "Part of the influUGC network" linking to the hub.
+
+## Content-first retrofit (Nov 6, 2026)
+
+Retrofitted to the owner's Nov 6 content-first model (sites lead with useful
+tips/guides/information for search engines + AI answers, with influUGC services
+and real work woven in), following the aistore guides implementation:
+
+- **Guides section is now section 01** on both homepages (after the proof
+  strip, before services); the later sections renumbered 02–05. Header nav and
+  the footer gained a Guides column, mirroring aistore.
+- **3 guides per homepage (AR + EN), answer-first, zero invented figures:**
+  1. `#guide-plan` — how to plan content coverage for a Riyadh event/festival
+     (moments map, per-phase deliverables, named roles, pre-agreed approvals).
+  2. `#guide-invite` — inviting creators to Saudi events: permits (via the
+     organiser; general guidance only, no legal claims), written invitations,
+     venue/audience etiquette, hosting logistics.
+  3. `#guide-measure` — measuring an event's content results: what to track
+     (inventory, platform analytics, engagement quality, audience voice,
+     follow-on actions) — no invented benchmark figures.
+- Each guide closes with a soft woven-in influUGC line + the standard central
+  CTAs (book + WhatsApp, `utm_source=riyadheventshub`). Guide styles added to
+  `styles.css` (same block as aistore). `llms.txt` gained a Guides section.
+- `sitemap.xml` unchanged — guides are anchor sections on the existing URLs,
+  no new pages.
 
 ## What remains (not done here)
 
